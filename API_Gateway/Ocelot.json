@@ -1,0 +1,63 @@
+{
+
+  "Routes": [
+
+    {
+
+      "UpstreamPathTemplate": "/Products",
+
+      "UpstreamHttpMethod": [ "GET" ,"POST"],
+
+      "DownstreamPathTemplate": "/api/products",
+
+      "DownstreamScheme": "http",
+
+      "DownstreamHostAndPorts": [
+
+        {
+
+          "Host": "localhost",
+
+          "Port": 5091
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "UpstreamPathTemplate": "/Orders",
+
+      "UpstreamHttpMethod": [ "GET" ,"POST"],
+
+      "DownstreamPathTemplate": "/api/orders",
+
+      "DownstreamScheme": "http",
+
+      "DownstreamHostAndPorts": [
+
+        {
+
+          "Host": "localhost",
+
+          "Port": 5089
+
+        }
+
+      ]
+
+    }
+
+  ],
+
+  "GlobalConfiguration": {
+
+    "BaseUrl": "http://localhost:5173"
+
+  }
+
+}
+
+ 
