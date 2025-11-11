@@ -18,18 +18,19 @@ Client
 [ Ocelot API Gateway ]
 ├──► Product Microservice → CRUD operations for products
 └──► Order Microservice → Fetch products & create orders
+
 SuperMarket_MicroService_UsingWEBAPI/
 │
 ├── ProductMicroservice/
 │ ├── Controllers/
 │ ├── Models/
-| ├── Migrations/
+│ ├── Migrations/
 │ └── appsettings.json
 │
 ├── OrderMicroservice/
 │ ├── Controllers/
 │ ├── Models/
-| ├── Migrations/
+│ ├── Migrations/
 │ └── appsettings.json
 │
 └── ApiGateway/
